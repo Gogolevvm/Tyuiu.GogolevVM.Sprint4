@@ -2,13 +2,13 @@
 {
     private static void Main(string[] args)
     {
-        int[] array = new int[] { 2,4,3,7,5,9 };
-        int m = int.MaxValue;
+        int[] array = new int[] { 2,4,3,7,5,1 };
+        int p = 0;
         for (int i = 0; i < array.Length; i++)
         {
-            if (array[i] % 2 != 0 && array[i] < m)
-                m = array[i];
+            if (array[i]  % 2 == 0)
+                p = p + array[i];
         }
-        Console.WriteLine(m);
+        Console.WriteLine(p);
     }
 }

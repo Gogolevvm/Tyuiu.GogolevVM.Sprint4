@@ -5,15 +5,15 @@ namespace Tyuiu.GogolevVM.Sprint4.Task0.V25.Lib
     {
         public int GetSumEvenArrEl(int[] array)
         {
-            int count = 0;
+            int sum = 0;
             for (int i = 0; i < array.Length; i++)
             {
                 if (array[i] % 2 == 0)
                 {
-                    count++;
+                    sum = sum + array[i];
                 }
             }
-            return count;
+            return sum;
         }
     }
 }
