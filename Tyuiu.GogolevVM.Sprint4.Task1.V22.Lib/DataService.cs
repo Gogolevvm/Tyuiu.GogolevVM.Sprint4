@@ -6,7 +6,7 @@ namespace Tyuiu.GogolevVM.Sprint4.Task1.V22.Lib
         public int Calculate(int[] array)
         {
             int p = 1;
-            for (int i = 2; i < array.Length - 2; i++)
+            for (int i = 0; i < array.Length ; i++)
             {
                 if (array[i] % 2 != 0)
                 {
