@@ -2,16 +2,19 @@
 {
     private static void Main(string[] args)
     {
-        int[] array = new int[] { 6,-5,5,0,-3,6 };
-        int c = 0;
-        for (int i = 0; i < array.Length; i++)
+        int[,] array = new int[,] { { -7,8,-1 }, { -3,-7,8 }, { -7,-2,8 } };
+        int s = 0;
+        for (int i = 0; i < array.GetLength(0); i++)
         {
-            if (array[i] > 0)
+            for (int j = 0; j < array.GetLength(1); j++)
             {
-                c++;
+                if (array[i,j] % 2 == 0)
+                {
+                    s += array[i, j];
+                } 
             }
         }
-        Console.WriteLine(c);
+        Console.WriteLine(s);
 
     }
 }
