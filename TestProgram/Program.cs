@@ -2,19 +2,19 @@
 {
     private static void Main(string[] args)
     {
-        int[,] array = new int[,] { { -7,8,-1 }, { -3,-7,8 }, { -7,-2,8 } };
-        int s = 0;
+        int[,] array = new int[,] { { 2,5,8,7}, { 6,7,2,5}, { 6,4,8,2}, { 2,7,6,3} };
+        int count = 0;
         for (int i = 0; i < array.GetLength(0); i++)
         {
             for (int j = 0; j < array.GetLength(1); j++)
             {
-                if (array[i,j] % 2 == 0)
+                if (array[i,j] % 2 != 0)
                 {
-                    s += array[i, j];
-                } 
+                    count++;
+                }
             }
         }
-        Console.WriteLine(s);
+        Console.WriteLine(count);
 
     }
 }
