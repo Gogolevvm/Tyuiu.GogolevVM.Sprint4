@@ -30,7 +30,7 @@ internal class Program
 
         for (int i = 0; i < numsArray.Length; i++)
         {
-            numsArray[i] = rnd.Next(5,20);
+            numsArray[i] = rnd.Next(4,9);
         }
 
         Console.WriteLine("Массив: ");

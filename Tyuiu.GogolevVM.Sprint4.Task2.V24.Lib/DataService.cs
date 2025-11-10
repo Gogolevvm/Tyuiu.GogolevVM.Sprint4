@@ -7,7 +7,7 @@ namespace Tyuiu.GogolevVM.Sprint4.Task2.V24.Lib
         {
             int sumArray = 0;
 
-            for (int i = 4; i < array.Length-2; i++)
+            for (int i = 0; i < array.Length; i++)
             {
                 if (array[i] % 2 != 0)
                 {
